@@ -29,11 +29,11 @@ Heart.prototype = {
 	},
 	
 	getRectangleH : function(){//获取中部矩形的高
-		return Math.floor((this.triangleH - 1)/ 2);
+		return Math.floor((this.triangleH - 1) / 2);
 	},
 	
 	getHumpH : function(){//获取驼峰的高度
-		return Math.floor((this.triangleH - 2)/ 2);
+		return Math.floor((this.triangleH - 2) / 2);
 	},
 	
 	getMaxHumpW : function(){//获取驼峰底部的宽
@@ -115,6 +115,7 @@ Heart.prototype = {
 		for(var l=0; l<humpH; l++){//构建驼峰
 			
 			var maxHumpW = this.getMaxHumpW() - humpCount;
+			if(this.triangleH > 8 && maxHumpW < 3) break;//驼峰修正
 			rowHtml.unshift('</div>');
 			
 			marginRight = this.getMarginRight(middleCount);
