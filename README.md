@@ -1,6 +1,5 @@
 Heart
 =====
----
 
 A simple JS tool to draw a heart shape.
 
@@ -13,7 +12,6 @@ A simple JS tool to draw a heart shape.
 
 示例
 =====
----
 
 html
 
