@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<style type="text/css">
+	.wrap{display:inline-block;}
+	</style>
+	<script type="text/javascript" src="heart.js"></script>
+</head>
+<body>
+	<div class="wrap" id="wrap"></div>
+	<div class="wrap" id="big"></div>
+<script type="text/javascript">
+var h = new Heart();
+h.init();
+
+var opt = {
+	parentId: "big",//容器id
+	triangleH: 10,  //底部三角形的高，通过它来控制心形的大小
+	color: [		//颜色值，随机取，数组长度为1时为单一颜色
+		"#FF443E"
+	]
+};
+var heart = new Heart(opt);
+heart.init();
+</script>
+</body>
+</html>
